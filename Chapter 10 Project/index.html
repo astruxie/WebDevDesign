@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+	<style>
+		html{
+			background-color: purple;
+		}
+		body {
+			width: 100%;
+			max-width: 1200px;
+			padding: 1%;
+		}
+		header h1{
+			text-align: center;
+			color: #e75480;
+		}
+		main {
+			width: 70%;
+			float: left;
+		}
+		aside {
+			background-color: #e75480;
+			color: pink;
+			margin-top: 1.5em;
+			margin-left: 10px;
+			width: 29%;
+			text-align: center;
+			float: right;
+		}
+		footer {
+			background-color: pink;
+			color: #e75480;
+			clear:both;
+			padding-top: 2px;
+			padding-bottom: 2px;
+			text-align: center;
+			font-weight: 800;
+		}
+		fieldset {
+			margin-top: 1em;
+			margin-bottom: 1em;
+			padding-top:0.5em;
+			font-style: bold;
+			font-size: 85%;
+			border: 1px solid pink;
+		}
+		legend {
+			color: pink;
+			margin-bottom: 0.5em;
+		}
+		label, input, select {
+			font-size: 90%;
+		}
+		label {
+			color: pink;
+			float: left;
+			width: 12em;
+			text-align: right;
+		}
+		#button{
+			margin-left:12em;
+		}
+
+	</style>
+<head>
+</head>
+<body>
+	<header>
+		<h1>Web Site Design and Development</h1>
+	</header>
+	<main>
+		<form name="info_form" action="survey.php" method="post">
+			<!--Login Info-->
+			<fieldset>
+				<legend>Login Information: </legend>
+				<label for="email"> E-Mail:</label>
+				<input type="email" name="email" id="email" required><br>
+				<label for="password"> Password:</label>
+				<input type="password" name="password" id="password" minlength="6" placeholder="At least 6 letters or numbers" title="At least 6 letters or numbers" required><br>
+				<label for="verifypassword"> Verify Password:</label>
+				<input type="password" name="verifypassword" minlength="6" id="verifypassword" required><br>
+			</fieldset>
+			
+			<!--Student Information-->
+			<fieldset>
+				<legend>Student Information:</legend>
+				<label for="firstname"> First Name:</label>
+				<input type="text" name="firstname" id="firstname" required><br>
+				<label for="lastname"> Last Name:</label>
+				<input type="text" name="lastname" id="lastname" required><br>
+				<label for="studentid"> Student ID:</label>
+				<input type="number" name="studentid" id="studentid" size="7" placeholder="7-digits" title="7-Digits" required><br>
+				<label for="homeroom"> HR:</label>
+				<input type="number" name="homeroom" id="homeroom" size="3" placeholder="3-digits" title="3-Digits" required><br>
+				<label for="yearofgraduation">Year of Graduation:</label>
+				<select>
+					<option value="2019">2019</option>
+					<option value="2020">2020</option>
+					<option value="2021">2021</option>
+					<option value="2022">2022</option>
+				</select>
+			</fieldset>
+			
+			<!--Submit Forum Buttons-->
+			<fieldset>
+				<legend>Submit Your Membership:</legend>
+				<input id="button" type="submit" value="Submit">
+				<input type="reset">
+			</fieldset>
+			
+		</form>
+			
+	</main>
+	<aside>
+		<h3>Teacher: Mrs. Cosce</h3>
+		<p>Period 5</p>
+		<p>Room 308</p>
+	</aside>
+	<footer>
+		<p>Cedar Crest High School</p>
+		<p>2018-2019</p>
+	</footer>
+</body>
+</html>

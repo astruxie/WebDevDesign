@@ -1,0 +1,12 @@
+header, section, footer, aside, nav, main, article, figure {
+display: block;
+}
+/*Combinator Selector*/
+h1 + p{
+	color: grey;
+	font-style: italic;
+}
+h1{
+	/*Text Shadow*/
+	text-shadow: 2px 2px red;
+}

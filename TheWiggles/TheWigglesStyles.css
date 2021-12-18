@@ -1,0 +1,15 @@
+header, section, footer, aside, nav, main, article, figure {
+display: block;
+}
+header {
+	background-color:Blue; color:Yellow; font-size:150%;
+}
+h1 {
+	background-color:Yellow; color:Blue;
+}
+p {
+	background-color:Red; color:Orange;
+}
+ul {
+	background-color:Green; color:Yellow;
+}

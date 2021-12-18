@@ -1,0 +1,91 @@
+header, section, footer, aside, nav, main, article, figure {
+display: block;
+}
+body{
+	background-color: #000066;
+	width:400;
+	height:500;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*This is an ID selector*/
+#top1{
+	position: relative;
+	font-size: 40px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	color:white;
+}
+#top2{
+	position: relative;
+	height:40px;
+	left: 600px;
+	bottom: 45px;
+	color: white
+	
+}
+#flag{
+	position: absolute;
+	bottom: 300px;
+	left: 25px;
+}
+/*STYLE FOR NAV BAR*/
+header{
+	float: right;
+	padding-bottom: 50px;
+}
+ul {
+  /*Changing style for list*/
+  list-style-type: none;
+  /*Box Model chnaged*/
+  margin: 0;
+  padding: 0;
+  width: 800px;
+  height: 50px;
+  overflow: hidden;
+  background-color: #cc0000;
+}
+
+li {
+  float: left;
+}
+/*Relational Selector*/
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #990000;
+}
+/*This is a class selector*/
+.active{
+	font-style: bold;
+	background-color:#990000;
+}
+header img{
+	float:left;
+}
+main{
+	border: 4px solid blue;
+	border-radius: 5px;
+	width: 900px;
+	padding-left:30px;
+	padding-right:30px;
+	margin-top: 170px;
+	margin-bottom: 200px;
+	background-color: #66ccff;
+}
+#signature{
+	/*Positioning Formatting*/
+	position: relative;
+	bottom: 370px;
+}
+
+blockquote{
+	font-size:150%;
+	font-style: italic;
+}
